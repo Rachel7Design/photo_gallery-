@@ -1,0 +1,206 @@
+
+
+
+.skip {
+  position: absolute;
+  top: -20px;
+  
+}
+
+
+a.skip:focus {
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  padding: 2%;
+  color: #00274C;
+}
+
+
+/* html {
+    cursor: url(/cursor.png), auto;
+} */
+/* attribution: <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by TA iF TKN - Flaticon</a> */
+
+    
+body {
+    background-color: black;
+    color: white;
+    font-family: "Instrument Sans", sans-serif;
+    
+}
+
+
+div.welcome {
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    
+}
+
+.about {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+ img.fireworks {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    margin: auto;
+ }
+
+ .heading {
+    grid-column: 2/3;
+ }
+
+ 
+
+ @keyframes glowIn {
+    from {
+      opacity: 0;
+    }
+    65% {
+      opacity: 1;
+      text-shadow: 0 0 25px white;
+    }
+    75% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
+  
+
+  
+.glowIn {
+    
+    animation: glowIn 0.8s;
+
+
+  }
+
+  span {
+    animation: glowIn 0.8s both;
+  }
+
+span:hover{
+
+  opacity: 1;
+  text-shadow: 0 0 25px white;
+  
+
+
+}
+
+
+button {
+
+}
+
+.nav {
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 65px;
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  color: white;
+}
+
+.nav > li {
+  
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  
+  
+
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+li:hover .link {
+
+  background-color:white;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0 0 70px red;
+  
+}
+
+
+li.green:hover .link {
+
+  background-color:white;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0 0 70px red;
+  
+}
+
+.home .link {
+  background-color:white;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0 0 70px red;
+}
+
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+  
+footer {
+  
+  background-color:black;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+.foot {
+  margin-top: 45%;
+}
+
+
+body {
+  min-height: 100vh;
+  display: grid;
+}
+
+

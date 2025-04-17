@@ -180,7 +180,27 @@ li.green:hover .link {
 }
 
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
+  
+footer {
+  
+  background-color:black;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+.foot {
+  margin-top: 45%;
+}
 
 
+body {
+  min-height: 100vh;
+  display: grid;
+}
 
 

@@ -373,6 +373,52 @@ img.rachel {
 }
 
 
+/* 404 page code  */
+
+.main404 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.page {
+  font-size: larger;
+  color: white;
+}
+
+.error {
+  background-color: black;
+  font-size: 100px;
+  color: white;
+}
+
+.body404 {
+  background-color: black
+}
+
+
+.button {
+  background-color: white;
+}
+
+.button a  {
+  color: black;
+  font-size: x-large;
+ 
+}
+.button:hover {
+  background-color: pink;
+
+}
+
+
+
+
 @media (prefers-reduced-motion) {
   /* styles to apply if a user's device settings are set to reduced motion */
 

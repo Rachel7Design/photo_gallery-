@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lightbox/lightbox.css"  />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 
@@ -22,105 +24,176 @@
     <nav>
         <ul class="nav">
                 <li> <a class="link" href = "index.html">Home</a></li>
-                <li><a href = "nature.html" class="link"> Nature </a></li>
-                <li><a href = "dog.html" class="link"> Dog </a></li>
+                <li class="nature"><a href = "nature.html" class="link"> Nature </a></li>
                 <li><a href = "aboutme.html" class="link"> About Me </a></li>
-                <li><a href = "contact.html" class="link"> Contact </a></li>
             </ul>
 
     </nav>
     
-       <h1 class="header"> Nature Gallery </h1>
+    <div class="natureHeading">
+       <h1 class="natureH1"> Nature Galleries </h1>
     
     </header>
 
 <main id="main"> 
 
+<div class="video">
     <video width="1024" height="768">
-        <source src="waterfall.mp4" type="video/mp4" alt="waterfall">
+        <source src="waterfall.mp4" type="video/mp4" alt="a loud, powerful waterfall">
     </video>
+</div>
 
+<div class = videoButtons>
     <button  id = "play">Play Video</button>
 	<button  id = "pause">Pause Video</button>
-    <button id="mute">Mute</button>
+    
+</div>
+
+<div class=mute>
+<button id="mute">Mute</button>
+</div>
 
     <p> Costa Rica Waterfall</p>
 
 
 
+
+
     <div class="container"> 
 
-        <div class="cr_container"> 
+        <div class="galleryTitle">
+        <h2> Costa Rica Gallery </h2>
+        </div>
 
-                <a href = "cr1.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
+        <div class="galleryContainer"> 
 
-                    <img width="480" height="360" src="cr1.JPG" alt="">
 
-                </a>
+                <a href = "cr1.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a close view of the crater of a volcano">
 
-                <a href = "cr2.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
-
-                    <img width="480" height="360" src="cr2.JPG" alt="">
-
-                </a>
-
-                <a href = "cr3.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
-
-                    <img width="480" height="360" src="cr3.JPG" alt="">
+                    <img width="450" height="338" src="cr1.JPG" alt="a close view of the crater of a volcano">
 
                 </a>
 
+                <a href = "cr2.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a far view of the crater of a volcano">
 
-                <a href = "cr4.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
+                    <img width="450" height="338" src="cr2.JPG" alt="a far view of the crater of a volcano">
+
+                </a>
+
+                <a href = "cr3.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a close up view of the crater of the volcano and its edges">
+
+                    <img width="450" height="338" src="cr3.JPG" alt="a close up view of the crater of the volcano and its edges">
+
+                </a>
+
+
+                <a href = "cr4.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a beach right after sunset">
             
-                    <img width="480" height="360" src="cr4.JPG" alt="">
+                    <img width="450" height="338" src="cr4.JPG" alt="a beach right after sunset">
 
                 </a>
 
 
-                <a href = "cr5.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
+                <a href = "cr5.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a waterfall with greenary all around">
 
             
-                    <img width="480" height="360" src="cr5.JPG" alt="">
+                    <img width="450" height="338" src="cr5.JPG" alt="a waterfall with greenary all around">
                 
                 </a>
 
 
-                <a href = "cr6.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
+                <a href = "cr6.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a footbridge over a waterfall">
 
 
-                    <img width="480" height="360" src="cr6.JPG" alt="">
+                    <img width="450" height="338" src="cr6.JPG" alt="a footbridge over a waterfall">
 
                 </a>
+
+           
                     
-                <a href = "cr7.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
+                <a href = "cr7.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a very light blue river">
 
-                    <img width="480" height="360" src="cr7.JPG" alt="">
-
-                </a>
-
-                <a href = "cr8.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "">
-
-
-                    <img width="480" height="360" src="cr8.JPG" alt="">
+                    <img width="450" height="338" src="cr7.JPG" alt="a very light blue river">
 
                 </a>
+
+                <a href = "cr8.JPG" data-lightbox="cr" data-title ="Costa Rica" data-alt = "a very light blue river">
+
+
+                    <img width="450" height="338" src="cr8.JPG" alt="a very light blue river">
+
+                </a>
+            
 
 
         </div>
 
 
+        <div class="galleryTitle">
+            <h2> Colorado Gallery </h2>
+            </div>
+
+        <div class="galleryContainer">
+
+            <a href = "nature/colorado4.jpg" data-lightbox="CO" data-title ="Garden of the God" data-alt = "orange-red boulder with sharp edges, about 15 feet in height, with sunlight in the background">
+
+                <img width="450" height="338" src="nature/colorado4.jpg" alt="orange-red boulder with sharp edges, about 15 feet in height, with sunlight in the background">
+            </a>
 
 
-        <div class="colorado_container">
-            <img width="480" height="360" src="nature/colorado4.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado5.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado6.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado7.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado8.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado9.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado10.jpg" alt="">
-            <img width="480" height="360" src="nature/colorado11.jpg" alt="">
+            <a href = "nature/colorado5.jpg" data-lightbox="CO" data-title ="Garden of the God" data-alt = "three tall orange-red boulders that look like buildings. All boulders are narrow and sharp looking. The boulder in the middle is the tallest. There are green trees below the boulders.">
+
+                <img width="450" height="338" src="nature/colorado5.jpg" alt="three tall orange-red boulders that look like buildings. All boulders are narrow and sharp looking. The boulder in the middle is the tallest. There are green trees below the boulders.">
+            
+            </a> 
+
+
+            <a href = "nature/colorado6.jpg" data-lightbox="CO" data-title ="Garden of the God" data-alt = "one big boulder with three extending rock formations that looks like fingers">
+
+            
+                <img width="450" height="338" src="nature/colorado6.jpg" alt="one big boulder with three extending rock formations that looks like fingers">
+
+            </a>
+
+
+
+            <a href = "nature/colorado7.jpg" data-lightbox="CO" data-title ="Garden of the God" data-alt = "a person rock-climbing a boulder">
+
+                <img width="450" height="338" src="nature/colorado7.jpg" alt="a person rock-climbing a boulder">
+
+            </a>
+
+
+            <a href = "nature/colorado8.jpg" data-lightbox="CO" data-title = "Garden of the God" data-alt = "two wide, medium lenght boulders surrounded by dry grass and trees">
+
+                <img width="450" height="338" src="nature/colorado8.jpg" alt="two wide, medium lenght boulders surrounded by dry grass and trees">
+
+            </a>
+
+
+            <a href = "nature/colorado9.jpg" data-lightbox="CO" data-title = "Garden of the God" data-alt = "two abstract rock formations, with strong sunlight in the background">
+
+                <img width="450" height="338" src="nature/colorado9.jpg" alt="two abstract rock formations, with strong sunlight in the background">
+
+            </a>
+
+
+
+            <a href = "nature/colorado10.jpg" data-lightbox="CO" data-title = "Garden of the God" data-alt = "pink rock formations">
+
+                <img width="450" height="338" src="nature/colorado10.jpg" alt="pink rock formations">
+
+            </a>
+
+
+            <a href = "nature/colorado11.jpg" data-lightbox="CO" data-title = "Garden of the God" data-alt = "a mountain with trees and a bird flying by">
+
+            <img width="450" height="338" src="nature/colorado11.jpg" alt="a mountain with trees and a bird flying by">
+
+            </a>
+
+
+
         </div>
 
 

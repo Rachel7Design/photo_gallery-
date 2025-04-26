@@ -2,38 +2,32 @@
 
 // https://codepen.io/alphardex/pen/Exxodoq
 
-let glowInTexts = document.querySelectorAll(".glowIn");
-glowInTexts.forEach(glowInText => {
-  let letters = glowInText.textContent.split("");
-  glowInText.textContent = "";
-  letters.forEach((letter, i) => {
-    let span = document.createElement("span");
-    span.textContent = letter;
-    span.style.animationDelay = `${i * 0.05}s`;
-    glowInText.append(span);
-  });
+window.addEventListener("load", function(letters) {
+
+
+	let glowInTexts = document.querySelectorAll(".glowIn");
+	glowInTexts.forEach(glowInText => {
+	  let letters = glowInText.textContent.split("");
+	  glowInText.textContent = "";
+	  letters.forEach((letter, i) => {
+		let span = document.createElement("span");
+		span.textContent = letter;
+		span.style.animationDelay = `${i * 0.05}s`;
+		glowInText.append(span);
+	  });
+	});
 });
-
-
-// let wordchange = document.querySelectorAll(".glowIn")
-
-// let words = glowInText.textContent.split(" ");
-//   glowInText.textContent = " ";
-  
-
-
-
-
 
 
 
 // start of video code
 
 
+
 window.addEventListener("load", function() {
 
 	const video = document.querySelector("video")
-	video.autoplay = true;
+	video.autoplay = false;
 	video.loop = true;
 	video.load();
 	console.log("Good job opening the window")

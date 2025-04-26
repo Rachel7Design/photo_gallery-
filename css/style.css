@@ -17,16 +17,14 @@ a.skip:focus {
 }
 
 
-/* html {
-    cursor: url(/cursor.png), auto;
-} */
-/* attribution: <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by TA iF TKN - Flaticon</a> */
 
     
 body {
     background-color: black;
     color: white;
     font-family: "Instrument Sans", sans-serif;
+    
+
     
 }
 
@@ -40,21 +38,24 @@ div.welcome {
 
 .about {
     grid-column: 3/4;
-    grid-row: 4/5;
+    grid-row: 2/3;
 }
 
  img.fireworks {
-    position: absolute;
+
     z-index: -1;
     width: 100%;
     margin: auto;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
  }
 
  .heading {
     grid-column: 2/3;
+    grid-row: 1/2;
  }
 
- 
+ /* javacript  */
 
  @keyframes glowIn {
     from {
@@ -91,13 +92,20 @@ span:hover{
   text-shadow: 0 0 25px white;
   
 
-
 }
 
 
-button {
+.eachword:hover {
+  transform: translateY(-20px);
+  transform: scaleY(1.2);
+
 
 }
+
+/* 
+end of javascript code */
+
+
 
 .nav {
 
@@ -151,20 +159,7 @@ li:hover .link {
 }
 
 
-li.green:hover .link {
 
-  background-color:white;
-  color: black;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  font-size: 28px;
-  font-weight: bolder;
-  border: none;
-  box-shadow: 0 0 70px red;
-  
-}
 
 .home .link {
   background-color:white;
@@ -180,6 +175,8 @@ li.green:hover .link {
 }
 
 
+
+
 footer a {
   color: white;
   text-decoration: none;
@@ -193,14 +190,204 @@ footer {
   margin-top: auto;
 }
 
-footer.foot {
-  margin-top: 45%;
-}
+
 
 
 body {
   min-height: 100vh;
-  display: grid;
+  
 }
+
+
+
+
+/* nature page code  */
+
+.video {
+
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: center;
+height: 600px;
+}
+
+
+
+
+.videoButtons {
+  
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1;
+  display: grid;
+  margin: auto;
+  padding: 5px;
+
+
+}
+
+button {
+  width:fit-content;
+}
+
+#play {
+  grid-column: 2/3;
+  justify-self: end;
+
+}
+
+
+.natureHeading {
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.natureH1 {
+  margin: auto;
+  
+}
+
+
+.nature .link {
+  background-color:white;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0 0 70px red;
+}
+
+.mute {
+  display: flex;
+}
+
+#mute {
+  margin: auto;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7px;
+}
+
+.galleryTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 27px;
+  border-style: solid;
+  border-color: azure;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 15px;
+
+  
+ 
+}
+
+
+@keyframes imagepop {
+  0%   {transform: scale(1)}
+  25%  {transform: scale(1.1)}
+  50%  {transform:scale(1.2)}
+  100% {transform: scale(1.1);}
+}
+
+
+img:hover {
+  animation: imagepop 1s infinite;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+
+
+@keyframes imagepop {
+  0%   {transform: scale(1)}
+  25%  {transform: scale(1.1)}
+  50%  {transform:scale(1.2)}
+  100% {transform: scale(1.1);}
+}
+
+/* end of nature page code */
+
+
+
+
+/* start of about me page code  */
+
+
+
+
+
+
+.aboutme .link {
+  background-color:white;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 28px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 0 0 70px red;
+}
+
+
+.grid {
+  grid-template-columns: 33% 33% 33%;
+  display: grid;
+  
+  
+}
+
+img.rachel {
+  animation: none;
+}
+.rachel {
+  
+  grid-column: 2/3;
+}
+
+.aboutrachel {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+
+@media (prefers-reduced-motion) {
+  /* styles to apply if a user's device settings are set to reduced motion */
+
+  img:hover {
+    animation: none;
+  }
+  
+  img {
+    animation: none;  
+  
+  }
+
+}
+
+
+
 
 
